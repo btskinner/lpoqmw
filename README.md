@@ -15,3 +15,13 @@ This repository hosts materials for meetings of the Vanderbilt University Dept. 
 |Nov. 15|TBD|
 |Nov. 29|TBD|
 
+## Download subfolders as zip files
+
+If you want to down individual folders as zipped files, use [kinolien.github.io/gitzip/](http://kinolien.github.io/gitzip/). To use it,
+go to the site and enter the following in the search field  
+
+`https://github.com/btskinner/lpoqmw/<folder>`  
+
+where `<folder>` is the name of the folder you want and **SEARCH**. For example, `https://github.com/btskinner/lpoqmw/oct_4_2016` will bring up a link to download the Oct. 4 meeting files. 
+
+*NB: May not work with Safari*

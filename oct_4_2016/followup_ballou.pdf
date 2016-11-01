@@ -1,0 +1,105 @@
+\documentclass[11]{article}
+
+% packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin = .95in]{geometry}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{apacite}
+\usepackage{url}
+\usepackage{amstext}
+\usepackage{mathtools}
+\usepackage[justification=raggedright]{caption}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[parfill]{parskip}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\begin{document}
+\begin{center}
+{\bfseries LPO Quantitative Methods Workshop \\
+Oct. 4, 2016 \\
+Follow-up Note} \\
+\end{center}
+
+{\bfseries PAPER}
+
+Aronow, P.M. \& Samil, C. (2016). ``\href{http://onlinelibrary.wiley.com/doi/10.1111/ajps.12185/abstract}{Does Regression Produce
+Representative Estimates of Causal Effects?}'' {\itshape American Journal of
+Political Science}, 60(1), p. 250-267. doi:10.1111/ajps.12185
+
+{\bfseries From Dale Ballou:}
+
+Here is the answer to the question I raised at our last meeting.
+
+To refresh your memory, here is the question.  The article pointed out
+that a least-squares estimate of a treatment effect is a weighted
+average of individual responses to treatment, with weights determined
+by the residual of a regression of treatment on the other covariates
+in the model.  The conclusion the authors drew was that this weighted
+average may not represent the quantity in which we are interested.  In
+particular, it may not be an unbiased estimate of the population mean
+response to treatment.
+
+The footnote that puzzled me discussed the random coefficient model in
+the context of panel data.  The primary purpose of the footnote was to
+discuss what happened when there was within-group heterogeneity in the
+response to treatment.  However, in the course of these remarks, the
+authors noted that when there was within-group homogeneity (albeit
+heterogeneity across groups), applying least-squares to the random
+coefficient model yielded an unbiased estimate of the population mean
+response to treatment.
+
+My question was why this case wasn't identical to the one they
+discussed throughout the rest of the article: why didn't heterogeneity
+across groups produce the same kind of weighted average estimate of
+response to treatment that would only fortuitously equal the average
+response in the population?
+
+Here’s the answer.  In the random coefficient model to which they were
+alluding, the response to treatment of individual $i$ is $\beta_i = \beta + u_i$,
+where $\beta$ is the population average and $u_i$ is the mean-zero deviation
+of that individual from the population mean.  If responses are
+homogeneous within groups, $u_i$ is the same for everyone in a group but
+varies across groups.  It is assumed in this model that $u_i$ is
+independent of the other covariates in the model.  The estimate of $\beta$
+produced by the model is a weighted average of the $\beta_i$, in which the
+weights are functions of the other covariates, $w_i = w(x_i)$.  Thus,
+the resulting estimate of $\beta$ can be written as
+\begin{align*}
+\hat{\beta} &= \frac{\sum_{i=1}^N w_i\beta_i}{\sum_{i=1}^N w_i},
+\end{align*}
+
+which has the same form as the estimated treatment effect discussed
+elsewhere in the paper.  However, because $x_i$ is assumed independent
+of $\beta_i$, so is $w_i$, so that when taking expectations of $\hat{\beta}$ with
+respect to $u_i$, we get
+\begin{align*}
+E[\hat{\beta}] &= \frac{\sum_{i=1}^N w_iE[\beta_i]}{\sum_{i=1}^Nw_i}
+                 = E[\beta_i] = \beta,
+\end{align*}
+
+{\itshape i.e.,} the population mean of $\beta_i$.
+
+What's important to note is that the same argument applies to the
+model discussed in the rest of the paper.  If individual responses to
+treatment are independent of the covariates in the model, the
+expectation of that estimate is not affected by the implied
+reweighting, ({\itshape i.e.,} by the fact that the effective sample differs from
+the notional sample).  All such samples yield unbiased estimates of
+the population average response to treatment.  The re-weighting that
+implicitly occurs is of no more consequence than the re-weighting that
+obviously occurs when different random samples are drawn from the
+population.  The differences in the estimated $\hat{\beta}$ are just sampling
+noise.  However, $\hat{\beta}$ is a biased estimate of the treatment effect
+when the $x$s are informative about individual heterogeneity.  That
+appears to be the case the authors had in mind in the examples they
+invited us to consider: cases where the effective sample is
+non-representative.  But as I recall, they never made this condition
+explicit, so that it was unclear why footnote 17 said one thing while
+the rest of the article said another.
+
+\end{document}

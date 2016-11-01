@@ -1,2 +1,5 @@
 _*/
 *.ipynb_checkpoints
+*.aux
+*.log
+*.out

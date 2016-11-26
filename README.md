@@ -12,8 +12,8 @@ This repository hosts materials for meetings of the Vanderbilt University Dept. 
 |Oct. 4|Regression and respresentative estimates|
 |Oct. 18|Balance checks for complex random assignment|
 |Nov. 1|Web scraping and API|
-|Nov. 15|TBD|
-|Nov. 29|TBD|
+|Nov. 15|*No Meeting*|
+|Nov. 29|Synthetic control methods with observational data|
 
 ## Download subfolders as zip files
 

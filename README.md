@@ -13,7 +13,7 @@ This repository hosts materials for meetings of the Vanderbilt University Dept. 
 |Oct. 18|Balance checks for complex random assignment|
 |Nov. 1|Web scraping and API|
 |Nov. 15|*No Meeting*|
-|Nov. 29|Synthetic control methods with observational data|
+|Nov. 29|Synthetic control methods with comparative case studies|
 
 ## Download subfolders as zip files
 

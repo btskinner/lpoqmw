@@ -159,7 +159,7 @@ bootstrapIM_normal <- function(formula, data, B, B2 = B){
     pb <- (B + 1 - sum(T < as.numeric(omegaB))) / (B + 1)
 
     message(paste('omega:', omegaB))
-    message(paste('pval :', round(pb, 3))
+    message(paste('pval :', round(pb, 3)))
 
     return(list(stat = omegaB, pval = pb))
 }

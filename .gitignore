@@ -4,3 +4,5 @@ _*/
 *.log
 *.out
 *.pptx
+*.sav
+*.Rhistory

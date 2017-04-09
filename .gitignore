@@ -6,3 +6,4 @@ _*/
 *.pptx
 *.sav
 *.Rhistory
+**/plotlyJupyterHTML/

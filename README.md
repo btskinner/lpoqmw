@@ -4,6 +4,19 @@ This repository hosts materials for meetings of the Vanderbilt University Dept. 
 
 ## Meetings
 
+### Spring 2017
+
+|Date|Topic|
+|:---|:---|
+|Jan. 24|R Workshop, part 1|
+|Jan. 31|R Workshop, part 2|
+|Feb. 14|Estimation of time-invariant and rarely changing variables in panel data models|
+|Feb. 28|Robust standard errors|
+|Mar. 14|*No Meeting*|
+|Mar. 28|*No Meeting*|
+|Apr. 11|Short primer on Bayesian vs. Frequentist Regression|
+|Apr. 25|Rerandomization to balance tiers of covariates in an RCT|
+
 ### Fall 2016
 
 |Date|Topic|
